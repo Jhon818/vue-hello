@@ -1,14 +1,22 @@
 // Descrizione:
 Vue.config.devtools = true;
-const new_row = document.createElement("h1");
-new_row.classList.add("aClassNameH1");
-console.log(new_row)
+// const new_row = document.createElement("img");
+// new_row.classList.add("aClassImg");
+// console.log(new_row)
 // Stampare a schermo un messaggio all’interno di un h1, utilizzando i data.
 const app = new Vue( {
-    el: ".aClassNameH1",
-        data:{
+    el1: "#root",
+        data: {
             message: "ciao"
-    }
+    },
+    
+    el2: ".img",
+    data1: {
+        src: "./img/img.jpg"
+    },
+
+
 })
+console.log(app.message);
 // Bonus:
 // Aggiungere alla pagina un’immagine, presa anch’essa da un data.
